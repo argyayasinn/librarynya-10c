@@ -44,6 +44,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -122,6 +123,10 @@ body {
   z-index: 9999;
 }
 
+#navbar2 {
+  background-color: rgba(219, 186, 102, 0.9);
+}
+
 .navbar .navbar-logo {
   font-family: "lemon";
   font-size: 3rem;
@@ -175,7 +180,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/header-bg.png");
+  background-image: url("../img/header-bg-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -320,6 +325,36 @@ body {
   font-size: 6rem;
 }
 
+.minggu2 {
+  position: relative;
+  top: -5rem;
+  padding-bottom: 3rem;
+  background: rgb(1, 1, 3);
+  justify-content: center;
+  /*display: inline-flex;*/ /* Pastikan elemen tetap inline dan mengikuti tata letak flex */
+  /*flex-direction: row; /* Pastikan arah elemen adalah baris (horizontal) */ /* Menjaga elemen tetap sejajar secara vertikal */
+  /* white-space: nowrap; */
+
+  /*line-height: normal;*/ /* Pastikan jarak antar baris adalah normal */
+  text-align: center;
+}
+
+.minggu2 a {
+  position: relative;
+  color: var(--primary);
+  text-shadow: 3px 3px 10px var(--bg);
+  font-family: "starborn";
+  font-size: 5rem;
+  transition: font-size 0.5s;
+  font-weight: 100;
+  text-align: center;
+}
+
+.minggu2 a:hover {
+  color: #ac6c54;
+  font-size: 7rem;
+}
+
 .vlog {
   position: relative;
   top: -5rem;
@@ -361,10 +396,79 @@ body {
   font-size: 2rem;
 }
 
+.vlog h5 {
+  color: var(--bg);
+  font-family: "starborn";
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
 .vlog .row .about-video video {
   box-shadow: 7px 7px 1px var(--bg);
   min-width: 100vw;
   margin-bottom: 5rem;
+}
+
+.vlog2 {
+  position: relative;
+  top: -27.5rem;
+  background-color: rgb(1, 1, 3);
+}
+
+.vlog2 h1 {
+  color: var(--bg);
+  font-family: "extra";
+  font-weight: 100;
+  text-shadow: 0px 0px 30px var(--bg);
+  font-size: 7rem;
+  text-align: center;
+  padding-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.vlog2 h2 {
+  color: var(--bg);
+  font-family: "starborn";
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.vlog2 h3 {
+  color: var(--bg);
+  font-family: "starborn";
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.vlog2 h4 {
+  color: var(--bg);
+  font-family: "starborn";
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.vlog2 h5 {
+  color: var(--bg);
+  font-family: "starborn";
+  font-weight: 100;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.vlog2 .row .about-video video {
+  box-shadow: 7px 7px 1px var(--bg);
+  min-width: 100vw;
+  margin-bottom: 5rem;
+}
+
+.kuning-blur img {
+  max-width: 100vw;
+  position: relative;
+  top: -27rem;
 }
 
 /* display: flex;
@@ -389,6 +493,8 @@ footer {
   position: relative;
   top: 0;
 }
+
+/* rgba(219, 186, 102, 0.9) */
 
 footer .socials {
   padding: 1rem 0;
@@ -465,6 +571,54 @@ footer .credit a {
   top: -2.5rem;
 }
 
+.about4 .row .about-img img {
+  max-width: 100vw;
+  position: relative;
+  top: -2.5rem;
+}
+
+.about5 .row .about-img img {
+  max-width: 100vw;
+  position: relative;
+  top: -2.5rem;
+}
+
+#day5 {
+  max-width: 100vw;
+  position: relative;
+  top: -7rem;
+}
+
+#day6 {
+  max-width: 100vw;
+  position: relative;
+  top: -6.5rem;
+}
+
+#day7 {
+  max-width: 100vw;
+  position: relative;
+  top: -6.5rem;
+}
+
+#day8 {
+  max-width: 100vw;
+  position: relative;
+  top: -6.5rem;
+}
+
+#day9 {
+  max-width: 100vw;
+  position: relative;
+  top: -10rem;
+}
+
+#day10 {
+  max-width: 100vw;
+  position: relative;
+  top: -11.5rem;
+}
+
 /* Video start */
 
 /* Video end */
@@ -474,6 +628,7 @@ footer .credit a {
 /* Laptop */
 @media (max-width: 1366px) {
   html {
+    overflow-x: hidden;
     font-size: 75%;
   }
   .hero .content h1 {
@@ -489,6 +644,7 @@ footer .credit a {
 /* Tablet */
 @media (max-width: 768px) {
   html {
+    overflow-x: hidden;
     font-size: 62.5%;
   }
 
@@ -531,11 +687,21 @@ footer .credit a {
     top: 17.5%;
     right: 5%;
   }
+
+  .minggu a {
+    display: block;
+    font-size: 4rem;
+  }
 }
 
 /* Mobile Phone */
 @media (max-width: 450px) {
   html {
+    overflow-x: hidden;
     font-size: 55%;
+  }
+  .minggu a {
+    display: block;
+    font-size: 3rem;
   }
 }
